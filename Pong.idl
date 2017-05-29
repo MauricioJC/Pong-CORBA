@@ -1,0 +1,12 @@
+module Pong{
+	interface ClientePong{
+		void actualizarTablero(in long r1, in long r2, in long x, in long y, in long m1, in long m2);
+	};
+
+	interface ServidorPong{
+		long conectar(in ClientePong cliente);
+		void up(in long no);
+		void down(in long no);
+	};
+
+};
